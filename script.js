@@ -18,26 +18,29 @@ const textbtn1 = document.createTextNode("login")
 button1.appendChild(textbtn1)
 const textbtn2 = document.createTextNode("sair")
 button2.appendChild(textbtn2)
-input1.placeholder = "ronaldo"
+input1.placeholder = "!!!!"
 input2.placeholder = "sair"
 input1.style.backgroundColor = "aqua"
 input1.style.width = "200px"
 input2.style.backgroundColor = "aqua"
 input2.style.width = "200px"
-button1.style.padding = "20px 40px"
-button2.style.padding = "20px 40px"
+button1.style.padding = "5px 88px"
+button2.style.padding = "5px 90px"
 div2.style.display= "flex"
 div2.style.justifyContent = "center"
+div1.style.marginBottom = "4px"
+input1.style.marginRight = "2px"
+button1.style.marginRight = "2px"
 document.body.style.height = "100vh"
 document.body.style.alignItems = "center"
 document.body.style.justifyContent = "center"
 document.body.style.display = "flex"
 document.body.style.flexDirection = "column"
 button1.addEventListener("click", ()=>{
-    alert("login efetuado")
+    alert(input1.value)
 })
 button2.addEventListener("click", ()=>{
-    alert("saida negada")
+    alert(input2.value)
 })
 document.body.appendChild(section)
 
